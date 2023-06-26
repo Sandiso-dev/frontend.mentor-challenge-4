@@ -5,7 +5,7 @@ import pro from '../assets/images/icon-pro.svg'
 
 const SelectYourPlan = () =>{
  return (
-    <div className="plan_container">
+    <section className="plan_container" id="selectPLan">
         <h1>Select Your Plan</h1>
         <p>You have the option of monthly or yearly biling</p>
 
@@ -38,7 +38,7 @@ const SelectYourPlan = () =>{
             <h4>yearly</h4>
 
         </div>
-    </div>
+    </section>
  )
 }
 

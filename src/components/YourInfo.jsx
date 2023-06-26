@@ -2,7 +2,7 @@ import React from 'react'
 
 const YourInfo = () => {
   return (
-    <div className="your_info">
+    <section className="your_info" id='yourInfo'>
       <h2>Personal info</h2>
       <p>Please provide your name,emai address and phone number.</p>
 
@@ -19,7 +19,7 @@ const YourInfo = () => {
 
         </form>
       </div>
-    </div>
+    </section>
   )
 }
 

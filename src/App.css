@@ -19,13 +19,17 @@ body{
      border-radius: 6px;
      height: 75vh;
      width: 800px;
+     transition: 2s all ease-in-out;
      
 }
 
 section{
     width: 100%;
     height: 100%;
+    margin-bottom: 40px;
 }
+
+/* sidebar styles */
 
 .sidebar-container{
     background: url('./assets/images/bg-sidebar-desktop.svg') no-repeat ;
@@ -44,6 +48,11 @@ section{
     color: white;
     display: inline;
     margin-left: 9px;
+}
+
+.sidebar-container > div p{
+    margin-left: 25px;
+    color: rgb(145, 144, 144);
 }
 
 .sidebar-container > div > a{
@@ -65,10 +74,27 @@ section{
     position: absolute;
     bottom: 0;
     right: 40px;
-    background: gray;
+    display: flex;
+    gap: 260px;
+    padding: 14px 15px ;
 }
 
-.next-container > button{
+.next-container > .back-btn > button {
+    padding: 10px 9px;
+    border: none;
+    color: rgb(99, 97, 97);
+    background: transparent;
+    cursor: pointer;
+    transition: 0.5s all ease-in;
+    
+}
+
+.next-container > .back-btn:hover {
+border: 1px solid rgb(172, 170, 170);
+border-radius: 4px;
+}
+
+.next-container > .next-btn > button{
     padding: 10px 8px;
     border-radius: 7px;
     border: none;
@@ -81,7 +107,10 @@ section{
     padding: 16px 35px;
     position: relative;
     width: 500px;
+    overflow: hidden;
 }
+
+/* option 1 styles */
 
 .your_info h2{
     font-weight: 800;
@@ -103,6 +132,8 @@ form > input::placeholder{
     color: black;
     font-weight: 700;
 }
+
+/* option 2 styles */
 
 .plans{
     margin-top: 20px;
@@ -190,3 +221,73 @@ input:checked + .slider::before{
     transform: translatex(24px);
 }
 
+
+/* step 3 */
+
+.add-ons-container > p{
+    margin-bottom: 20px;
+    color: gray;
+}
+
+.add-ons-container > .addons > .addon{
+display: flex;
+padding: 12px;
+border: 1px solid rgb(150, 150, 150);
+border-radius: 6px;
+margin-bottom: 12px;
+position: relative;
+
+}
+
+.addon > label > span{
+    display: inline;
+    position: absolute;
+    right: 8px;
+    top: 25px;
+    color: gray;
+    font-weight: bold;
+}
+
+.addon > input{
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.addon > label > p{
+    color: gray;
+}
+
+
+/*FINISH UP STYLES*/
+
+.finishing-container > p {
+    margin-bottom:20px ;
+}
+
+.product{
+    position: relative;
+    border: 1px solid rgb(180, 179, 179);
+    padding: 12px;
+    background: rgb(221, 220, 220);
+}
+
+.product > h4 {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    
+}
+
+.product-total{
+    position: relative;
+    padding: 12px;
+}
+
+.product-total > span {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    
+}
