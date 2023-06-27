@@ -3,21 +3,20 @@ import YourInfo from './YourInfo'
 import SelectYourPlan from './SelectYourPlan'
 import AddOns from './AddOns'
 import FinishingUp from './FinishingUp'
+import ThankYou from './ThankYou' 
+import {Link} from 'react-dom'
 
 const ContentSide = () => {
   return (
+    <>
     <div className='content-container'>
       <YourInfo/>
       <SelectYourPlan/>
       <AddOns/>
       <FinishingUp/>
-
-
-      <div className="next-container">
-        <div className='back-btn'><button>Back</button></div>
-        <div className='next-btn'><button>Next Step</button></div>
-      </div>
+      <ThankYou/>
     </div>
+</>
   )
 }
 
